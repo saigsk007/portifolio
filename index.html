@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganta Sai Kiran portifolio</title>
+    <link rel="icon" href="logo.png" style="border-radius: 50%;">
+    <style>
+        *{
+            margin: 0px;
+            outline: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #000000;
+            color: white;
+
+        }
+
+        nav {
+            /* background-image: linear-gradient(to right, red , blue); */
+            background-color: black;
+            /* position: absolute; */
+            /* border: 2px #775144 solid; */
+            font-size: 20px;
+        }
+
+        #NAVDIV {
+            display: inline-block;
+            margin-top: 70px;
+            /* padding-left: 10px; */
+        }
+
+        #PIC {
+            animation-name: ANIME;
+            animation-duration: 0.5S;
+        }
+
+        @keyframes ANIME {
+            FROM {
+                MARGIN-LEFT: 300PX;
+            }
+
+            TO {
+                margin-left: 0PX;
+            }
+        }
+
+        /* #logo {
+            HEIGHT: 1EM;
+            width: 1em;
+            border-radius: 50px;
+            padding: 0%;
+        }
+        #logo:hover{
+            height: 1.2EM;
+            width: 1.2em;
+            transition:all 0.5s ease;
+            box-shadow: 5px 5px 5px black;
+        } */
+        #LINKS {
+            color: rgb(255, 255, 255);
+            font-family: arial;
+            text-decoration: none;
+            padding-right: 30PX;
+            padding-LEFT: 30PX;
+            /* padding-left: 5PX;
+            padding-right: 5PX; */
+            /* color: rgb(60, 242, 60); */
+        }
+
+        #LINKS:HOVER {
+            color: rgb(0, 0, 0);
+            background-color: rgb(0, 255, 247);
+            border-radius: 12PX;
+            /* font-family: monospace; */
+            letter-spacing: 2PX;
+            font-size: 1.1EM;
+            transition: 0.5S ALL ease;
+        }
+
+        #NAME {
+            padding-right: 25PX;
+            align-items: center;
+            color: white;
+        }
+
+        #NAME:HOVER {
+            /* text-shadow: 5PX 5PX 9PX  rgb(23, 23, 23); */
+            transition: 0.5S ALL ease;
+            word-spacing: 7px;
+        }
+
+        #pic {
+            /* position:initial; */
+            top: 0PX;
+            border: 2px black solid;
+            border-radius: 200PX;
+            /* box-shadow: 5px 5px 5PX rgb(0, 179, 255); */
+            height: 323px;
+            width: 323px;
+            margin-right: 100PX;
+            display: inline-block;
+        }
+
+        #pic:hover {
+            box-shadow: 10px 10px 15px rgb(242, 99, 99);
+            height: 330px;
+            width: 330px;
+            transition: all 0.5s ease-in-out;
+            margin-top: 0px;
+            padding-top: 0%;
+            border-radius: 30PX;
+        }
+
+        #INTRO_HEADING {
+            text-align: center;
+            /* padding-top: 30PX; */
+            font-size: 40PX;
+            color: #c4c4c4;
+        }
+
+        .INTRO {
+            /* position: absolute; */
+            TOP: 60PX;
+            background-color: #000000;
+            /* height: 400PX; */
+            width: 98%;
+            margin-left: 2%;
+            /* padding-bottom: 80PX;
+            padding-top: 20PX; */
+            margin-top: 10px;
+            /*border-radius: 15px;*/
+            color: rgba(255, 255, 255, 0.521);
+            /*border: rgb(0, 0, 0) 3px solid;*/
+            /* box-shadow: 3px 3px 4px #ff0967ec; */
+            margin-left: 1%;
+            /* background-color: #8BC6EC;
+background-image: linear-gradient(90deg,#ff0000 0% ,#f2ff00 30%, #f2ff00 50%,#00ff11 100%) */
+        }
+
+        #INTRO_HEADING:hover {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            letter-spacing: 6PX;
+            transition: all 0.5S ease;
+        }
+
+        #INTRO_TEXT {
+            text-align: center;
+            color: #ffffff;
+            /* word-spacing: 10PX; */
+            line-height: 20PX;
+            /* padding-top: 30PX; */
+            margin-top: 0PX;
+        }
+
+        .INTRO:HOVER {
+            transition: all 0.5S ease;
+            color: white;
+        }
+
+        #INTSEC {
+            height: 9O0PX;
+            /* BACKGROUND-COLOR: YELLOW; */
+            /* padding-left: 10PX; */
+            /* color: azure; */
+        }
+
+        .skill {
+            margin-bottom: 10px;
+            margin-left: 3PX;
+            margin-top: 20PX;
+            width: 98%;
+            /* border-radius: 30PX;
+            border: 2PX black solid; */
+            /* padding: 30px; */
+            /* box-shadow: 5px 5px 5PX rgba(255, 0, 221, 0.443); */
+            /* background-color: #0093E9;
+background-image: linear-gradient(-50deg, #0044ff 0%, #2bb3cb 100%); */
+        }
+
+        #SKILLSHEADING,
+        #education,
+        #CERTIFICATES,
+        #projects,
+        #COMTACTINFO {
+            /* padding-top: 15px;
+            padding-left: 30px; */
+            margin-top: 50PX;
+            font-size: 35px;
+        }
+
+        #SKILLSHEADING:HOVER,
+        #education:hover,
+        #CERTIFICATES:HOVER,
+        #projects:hover,
+        #COMTACTINFO:HOVER {
+            transition: all 0.5S ease;
+            letter-spacing: 7PX;
+            text-shadow: 3PX 3PX 10PX rgb(0, 166, 255);
+        }
+
+        .skill-bar {
+            /* background-color: #f2f2f2; */
+            border-radius: 5px;
+            padding: 3px;
+
+        }
+
+        .skill-level {
+            background: linear-gradient(90deg, rgb(248, 211, 211) 1%, rgb(244, 169, 169) 26%, rgb(243, 131, 131) 45%, rgb(249, 73, 73) 61%, rgb(240, 38, 38) 78%, rgb(255, 0, 0) 94%);
+            ;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            border-radius: 5px;
+            animation-name: BAR;
+            animation-duration: 1S;
+            transition: all 0.2s ease;
+        }
+
+        .skill-level:hover {
+            background-color: yellow;
+            border-radius: 50px;
+            transition: all 0.2s ease;
+        }
+
+        .skill-bar:hover {
+            padding: 7px;
+        }
+
+        .skill-bar:HOVER {
+            border-radius: 50px;
+            transition: all 0.2s ease;
+            box-shadow: 1px 1px 3px rgb(0, 234, 255) inset, 1px 1px 3px rgb(0, 234, 255);
+        }
+
+        @keyframes BAR {
+            FROM {
+                width: 0%;
+            }
+
+            TO {
+                width: 20%;
+            }
+        }
+
+        #JS {
+            animation-name: BAR1;
+            animation-duration: 1S;
+            transition: all 3S ease;
+        }
+
+        @keyframes BAR1 {
+            FROM {
+                width: 0%;
+            }
+
+            TO {
+                width: 30%;
+            }
+        }
+
+        #HTML {
+            animation-name: BAR2;
+            animation-duration: 1S;
+            transition: all 3S ease;
+        }
+
+        #HTML:hover {
+            animation-name: BAR2;
+            transition: all 3S ease;
+        }
+
+        @keyframes BAR2 {
+            FROM {
+                width: 0%;
+            }
+
+            TO {
+                width: 50%;
+            }
+        }
+
+        #CSS {
+            animation-name: BAR3;
+            animation-duration: 1S;
+            transition: all 3S ease;
+        }
+
+        @keyframes BAR3 {
+            FROM {
+                width: 0%;
+            }
+
+            TO {
+                width: 50%;
+            }
+        }
+
+        #PYTHON {
+            animation-name: BAR4;
+            animation-duration: 1S;
+            transition: all 3S ease;
+        }
+
+        @keyframes BAR4 {
+            FROM {
+                width: 0%;
+            }
+
+            TO {
+                width: 70%;
+            }
+        }
+
+        #SQL {
+            animation-name: BAR5;
+            animation-duration: 1S;
+            transition: all 3S ease;
+        }
+
+        @keyframes BAR5 {
+            FROM {
+                width: 0%;
+            }
+
+            TO {
+                width: 50%;
+            }
+        }
+
+        #Bootstrap {
+            animation-name: BAR6;
+            animation-duration: 1S;
+            transition: all 3S ease;
+        }
+
+        @keyframes BAR6 {
+            FROM {
+                width: 0%;
+            }
+
+            TO {
+                width: 20%;
+            }
+        }
+
+        .skill-name {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            /* text-align: center; */
+            padding: 10PX;
+        }
+
+        .skill-name:hover {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            /* letter-spacing: 7PX; */
+            transition: ALL 0.5S EASE;
+        }
+
+        .level {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            width: 0;
+            transition: width 2s;
+            /* Animation duration */
+        }
+
+        #education {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            /* text-align: center; */
+            padding: 10PX;
+        }
+
+        #EDUCATION:HOVER {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            letter-spacing: 7PX;
+            transition: ALL 0.5S EASE;
+        }
+
+        #btech,
+        #diploma,
+        #ssc {
+            /* padding: 0.5%; */
+            text-align: center;
+            /* background-color: #8ecae6; */
+            color: rgb(255, 255, 255);
+            /* height: 20%; */
+            width: 97.5%;
+            font-size: 25px;
+            /* border: 2px rgb(255, 255, 255) solid;/ */
+            /* border-radius: 20px; */
+            margin-bottom: 15px;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+            /* box-shadow: 3px 3px 3PX rgba(0, 0, 0, 0.443); */
+        }
+
+        #btech>h4,
+        #diploma>h4,
+        #ssc>h4 {
+            /* padding: 0%; */
+            margin-bottom: 0PX;
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            font-weight: 900;
+            /* border: 2px rgb(255, 255, 255) solid; */
+        }
+
+        #SVCLOGO,
+        #MBTSLOGO,
+        #ssclogo {
+            border: 7PX rgb(0, 213, 255) SOLID;
+            margin-top: 10PX;
+            margin-right: 10PX;
+            margin-LEFT: 10PX;
+            border-radius: 50%;
+            /* box-shadow: 5PX 5PX 5PX black; */
+            height: 200PX;
+            width: 200PX;
+            /* border: 2px rgb(255, 255, 255) solid; */
+            /* box-shadow: 7px 7px 7PX rgba(0, 0, 0, 0.443); */
+        }
+
+        #SVCLOGO:hover,
+        #ssclogo:hover {
+            box-shadow: -10px 10px 10PX rgba(0, 208, 255, 0.974);
+            height: 220PX;
+            width: 220PX;
+            transition: all 0.5s ease;
+        }
+
+        #MBTSLOGO:hover {
+            box-shadow: 10px 10px 10PX rgba(255, 0, 217, 0.974);
+            height: 220PX;
+            width: 220PX;
+            /* border: 2px rgb(255, 255, 255) solid;/ */
+            transition: all 0.5s ease;
+
+        }
+
+        .CERTIFICATES {
+            /* width: 96%; */
+            /* padding-left: 30PX; */
+            /* margin: 20PX;
+            margin-left: 3PX; */
+            /* border: 2PX black SOLID; */
+            border-radius: 30PX;
+            /* background-color: #ffbd00; */
+            font-size: 20px;
+        }
+
+        #CERIMG,
+        #CERIMG1 {
+            display: flex;
+            justify-content: center;
+            gap: 5PX;
+            align-items: center;
+        }
+
+        #PYCER {
+            /* padding: 5PX;     */
+            width: 150PX;
+            height: 300PX;
+            filter: blur(1px);
+            object-fit: cover;
+            border: 2PX rgb(255, 0, 0) solid;
+            border-radius: 20PX;
+            background-color: #003566;
+        }
+
+        #PYCER:hover {
+            width: 600PX;
+            height: 400PX;
+            transition: all 0.3S ease-in;
+            border: 5PX rgb(13, 255, 0) solid;
+            filter: blur(0px);
+        }
+
+        #callwen {
+            color: rgb(61, 231, 243);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-decoration: none;
+        }
+
+        #callwen:hover {
+            font-size: 27px;
+            text-decoration: underline dashed rgb(61, 231, 243);
+            color: rgb(61, 231, 243);
+            transition: all 0.3s ease;
+        }
+
+        #PYLOGO:HOVER {
+            height: 1.2REM;
+            width: AUTO;
+        }
+
+        /* Styling the Heading */
+        h4 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana sans-serif;
+            /* Modern and widely available font */
+            font-size: 30px;
+            /* Larger font size for prominence */
+            text-transform: uppercase;
+            /* Transform the text to uppercase */
+            color: #ffffff;
+            /* Dark color for the text */
+            text-shadow: 1px 1px 2 #999;
+            /* Add a subtle text shadow for depth */
+            letter-spacing: 5px;
+            /* Adjust the letter spacing for visual appeal */
+            text-align: center;
+            /* Center the text */
+            padding: 10px;
+            /* Add padding around the text for a clean layout */
+            /* /border: 2px solid #333333; Add a border around the text */
+            border-radius: 10px;
+            /* Apply border radius for rounded corners*/
+        }
+
+        #COMINFO {
+            display: flex;
+            justify-content: center;
+            GAP: 70PX
+        }
+
+        #LINKEDIN {
+            background-color: transparent;
+            height: 50PX;
+            width: 50PX;
+        }
+
+        #LINKEDIN:hover {
+            height: 60PX;
+            width: 60PX;
+            BOX-shadow: 5PX 5PX 10PX palegreen;
+            transition: all 0.5S EASE;
+        }
+
+        #MAIL {
+            background-color: transparent;
+            height: 50PX;
+            width: 65PX;
+        }
+
+        #MAIL:hover {
+            height: 60PX;
+            width: 75PX;
+            BOX-shadow: 5PX 5PX 10PX palegreen;
+            transition: all 0.5S EASE;
+        }
+
+        #pro {
+            text-align: center;
+        }
+
+        #pro>a {
+            color: yellow;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <DIV ID="TOP">
+        <nav style="font-size: 20px;text-align: center;">
+            <DIV ID="NAVDIV">
+            </DIV>
+            <DIV style="display: inline-block;">
+                <ul style="float: RIGHT; padding: 0PX;margin: 0PX;text-align: center;">
+                    <a ID="LINKS" href="#INTRO1"><B>HOME</B></a>
+                    <a ID="LINKS" href="#SKILLS"><B>SKILLS</B></a>
+                    <a ID="LINKS" href="#educsec"><B>EDUCATIONS</B></a>
+                    <a ID="LINKS" href="#CERTIFICATES"><B>CERTIFICATION</B></a>
+                    <!-- <a ID="LINKS" href="#COMTACTINFO"><B>PROJECTS</B></a> -->
+                    <a ID="LINKS" href="#projects"><B>CONTACT INFO</B></a>
+                </ul>
+            </DIV>
+        </nav>
+    </DIV>
+    <BR></BR>
+    <section id="INTRO1" class="INTRO">
+        <DIV>
+            <div ID="INTSEC">
+                <img src="pic.png" id="pic" align="RIGHT" />
+                <h1 ID="NAME"></h1>
+                <DIV>
+                    <H1 ID="INTRO_HEADING" style="PADDING-top: 10%;">HEY THERE! <BR><strong style="color: RED;">I AM G
+                            SAI KIRAN</strong> </H1>
+                </DIV>
+                <DIV style="margin-top: 15%;">
+                    <P id="INTRO_TEXT" style="font-size: 20px;">
+                        Greetings! I'm Ganta Sai Kiran, an enthusiastic web
+                        developer armed with basic knowlEdge in Python, HTML, CSS, SQL, and JavaScript, complemented by
+                        Bootstrap proficiency. Armed with a Bachelor's in Electrical and Electronics Engineering, I've
+                        honed my
+                        abilities through hands-on experiences, including leading a team in the implementation of
+                        machine
+                        learning algorithms, resulting in a 20% boost in data accuracy. My certifications, coupled with
+                        a
+                        passion for continuous learning and a knack for problem-solving, make me a versatile candidate
+                        ready to
+                        contribute to innovative web development projects.
+                    </P>
+                </div>
+            </DIV>
+        </DIV>
+    </section>
+    <a href="#TOP" style="position:FIXED; right: 10PX;bottom: 10PX;">
+        <div style="border-radius: 50PX;height: 30px;width: 30px; background-color: rgb(0, 255, 251);"><IMG
+                src="ARROW.png" style="size: COVER;height: 25px;width: 25px;border-radius: 15PX; padding: 3PX;"></div>
+    </a>
+    <SECTION id="SKILLS" style="font-size: 20px;padding:15PX">
+
+        <div class="skill">
+            <div>
+                <H1 ID="SKILLSHEADING" style="font-size: 50PX;text-align: center;padding: 0%;">
+                    SKILLS
+                </H1>
+                <div id="SKILLBA">
+                    <div class="skill-name"><IMG src="PY.png" style="height: 1.5EM;width: 1.5EM;" id="PYLOGO"> PYTHON
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;" ID="PYTHON">
+                            <strong>70%</strong>
+                        </div>
+                    </div>
+                    <div class="skill-name"><IMG src="SQL.png" style="height: 1.5EM;width: 1.5EM;" id="PYLOGO"> SQL
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 50%" ID="SQL">
+                            <strong>50%</strong>
+                        </div>
+                    </div>
+                    <div class="skill-name"><IMG src="HTML.png" style="height: 1.5EM;width: 1.5EM;" id="PYLOGO"> HTML
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 50%;background-color: rgb(0, 255, 0);" ID="HTML">
+                            <strong>50%</strong>
+                        </div>
+                    </div>
+                    <div class="skill-name"><IMG src="CSS.png" style="height: 1.5EM;width: 1.5EM;" id="PYLOGO"> CSS
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 50%;background-color: rgb(0, 255, 0);" ID="CSS">
+                            <strong>50%</strong>
+                        </div>
+                    </div>
+                    <div class="skill-name"><IMG src="JS.png" style="height: 1.5EM;width: 1.5EM;" id="PYLOGO">
+                        JAVASCRIPT</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" ID=JS style="width: 30%;background-color: rgb(0, 255, 0);">
+                            <strong>30%</strong>
+                        </div>
+                    </div>
+                    <div class="skill-name"><IMG src="BOOTSTRAP.png" style="height: 1.5EM;width: 1.5EM;" id="PYLOGO">
+                        BOOTSTRAP</div>
+                    <div class="skill-bar">
+                        <div id="Bootstrap" class="skill-level" style="width: 20%;background-color: rgb(0, 255, 0);">
+                            <strong>20%</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </SECTION>
+    <SECTION id="educsec" style="font-size: 20px;">
+        <div>
+            <div id="education">
+                <H1 style="padding: 30px; font-size: 40PX;text-align: center;font-size: 50PX;">EDUCATION</H1>
+            </div>
+            <div id="btech">
+                <div>
+                    <A href="https://svcet.info/" target="_blank"><IMG ID="SVCLOGO" src="SVCLOGO.jpg" ALIGN="LEFT"> </A>
+                </div>
+                <DIV style="padding-bottom: 40PX;">
+                    <p>
+                    <h4> BACHELOR OF TECHNOLOGY IN ELECTRICAL AND ELECTRONICS ENGINEERING </h4>
+                    </p>
+                    <A id="callwen" href="https://svcet.info/" target="_blank"> Sri Venkateswara College OF Engineering
+                        and
+                        Technology</A> <br>Srikakulam Andhra Pradesh APR 2024<br>
+                    - Graduated with a GPA of 7.5.<br>
+                    </p>
+                </div>
+            </DIV>
+            <HR>
+            </HR>
+            <DIV style="margin-top: 40PX;">
+                <DIV> <A href="https://mbtsgovtpolyguntur.ac.in/" target="_blank" ALIGN="LEFT"><IMG src="MBTS LOGO.png"
+                            ID="MBTSLOGO" style="float: RIGHT;"> </A></DIV>
+                <div id="diploma">
+                    <p>
+                    <h4> Diploma in Electrical and Electronics Engineering</h4><br>
+                    <a id="callwen" href="https://mbtsgovtpolyguntur.ac.in/" target="_blank"> GOVT polytechnic
+                        college </a>
+                    <br>Nallapadu Guntur <br>
+                    - Graduated with a Percentage of 75%<br>
+                    </p>
+                </div>
+            </DIV>
+            <br><br>
+            <HR>
+            <div id="ssc">
+                <A href="https://schools.org.in/srikakulam/28113401320/ap-model-school-sompeta.html"
+                    target="_blank"><IMG src="ssc.png" ID="ssclogo" ALIGN="LEFT"> </A>
+                <p>
+                <h4> SECONDARY SCHOOL EDUCATION</h4><br>
+                <a id="callwen" href="https://schools.org.in/srikakulam/28113401320/ap-model-school-sompeta.html"
+                    target="_blank"> AP
+                    MODEL SCHOOL </a>
+                <br>Sompeta Srikakulam <br>
+                - Graduated with a GPA of 8.8<br>
+                </p>
+            </div>
+            <br>
+            <BR>
+        </div>
+        <hr>
+    </SECTION>
+    <SECTION>
+        <DIV class="CERTIFICATES">
+            <DIV id="CERTIFICATES">
+                <H1 style="text-align: center;font-size: 50PX;">CERTIFICATION</H1>
+            </DIV>
+            <BR><BR>
+            <H1 style="text-align: center;font-size: 30PX;" id="PYCERTIFICATES">PYTHON CERTIFICATION</H1>
+            <BR> <br>
+            <DIV id="CERIMG">
+                <IMG SRC="P1.png" id="PYCER"></IMG>
+                <IMG SRC="P2.png" id="PYCER"></IMG>
+                <IMG SRC="P3.png" id="PYCER"></IMG>
+                <IMG SRC="P4.png" id="PYCER"></IMG>
+                <IMG SRC="P5.png" id="PYCER"></IMG>
+            </DIV>
+            <H1 style="text-align: center;font-size: 30PX;padding-top:30px" id="PYCERTIFICATES">HTML AND CSS
+                CERTIFICATES</H1>
+            <br><BR></BR>
+            <DIV ID="CERIMG1">
+
+                <IMG SRC="FE1.png" id="PYCER"></IMG>
+                <IMG SRC="FE2.png" id="PYCER"></IMG>
+                <IMG SRC="FE3.png" id="PYCER"></IMG>
+                <IMG SRC="FE4.png" id="PYCER"></IMG>
+            </DIV> <br><BR></BR>
+            <H1 style="text-align: center;font-size: 30PX;" id="PYCERTIFICATES">SQL CERTIFICATION</H1>
+            <br><BR></BR>
+            <DIV ID="CERIMG1">
+
+                <IMG SRC="SQL1.png" id="PYCER"></IMG>
+                <IMG SRC="SQL2.png" id="PYCER"></IMG>
+            </DIV>
+        </DIV><br>
+    </SECTION>
+    <section style="background-color: #0a3b46;margin-top:0px; color: rgb(255, 255, 255);">
+        <DIV id="CONINFO" style="border-radius: 30PX; width: 98%;">
+            <DIV>
+                <h1 ID="COMTACTINFO" style="text-align: center ;padding:30px">CONTACT INFORMATION</h1>
+            </DIV>
+            <DIV ID="COMINFO" style="text-align: center;font-size: 25PX;">
+                <div></div>
+                <!-- <p><strong ID="CONTACTDETAILS" style="transition: all 0.2S ease;">NUMBER <BR></strong> -->
+                <p><A href="TEL:+917093723996" style="text-decoration: none;color: yellow;"><img src="PHONE.png"
+                            alt="7093723996" id="LINKEDIN"></A>
+                </p>
+                <div>
+                    <!-- <P><strong id="GMAIL" style="transition: all 0.2S ease;;">GMAIL<BR></strong>-->
+                    <P> <A style="text-decoration: none;color: yellow;" href="mailto:saikiranganta2003@gmail.com"
+                            target="_blank"><img src="MAILS.png" id="MAIL"></a></A></P>
+                </div>
+                <div>
+                    <!-- <P><strong ID="LINKEDIN" style="transition: all 0.2S ease;;">LINKEDIN<BR></strong> -->
+                    <P>
+                        <A href="https://www.linkedin.com/in/sai-kiran-ganta-377340288"
+                            style="text-decoration: none;color: yellow;" target="_blank">
+
+                            <img src="IN.png" id="LINKEDIN">
+                        </a>
+                    </P>
+                </DIV>
+            </DIV>
+        </DIV>
+    </SECTION>
+</body>
+</html>
